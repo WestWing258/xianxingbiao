@@ -1,3 +1,4 @@
+#include <stdio.h>
 #define InitSize 50
 //动态定义顺序表
 typedef struct{
@@ -9,7 +10,7 @@ void InitList(SeqList L){
 	L.data=(int *)malloc(sizeof(int)*InitSize);//调用malloc函数需加头stdlib.h
 	L.length=0;
 }
-
+//测试
 void test(){
 	SeqList L;
 	InitList(L);
@@ -49,4 +50,9 @@ int LocateElem(SeqList L,int e){
 //按位查找
 int GetElem(SeqList L,int i){
 	return L.data[i-1];
+}
+
+int main(){
+	printf("Hello,world!");
+	return 0;
 }
