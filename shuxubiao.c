@@ -53,6 +53,10 @@ int GetElem(SeqList L,int i){
 }
 
 int main(){
+	int a = 10；
+	int b = 10；
+	int sum = a + b；
+	printf("%d\n",sum );
 	printf("Hello,world!");
 	return 0;
 }
